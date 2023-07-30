@@ -1,19 +1,24 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Trà sữa",
-            "price": 100
-        },
-        {
-            "id": 2,
-            "name": "Mỳ cay",
-            "price": 200
-        },
-        {
-            "id": 3,
-            "name": "Cơm rang",
-            "price": 300
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Trà sữa",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "name": "Mỳ cay",
+      "price": 200
+    },
+    {
+      "id": 3,
+      "name": "Cơm rang",
+      "price": 300
+    },
+    {
+      "name": "bedau153",
+      "price": "12000",
+      "id": 4
+    }
+  ]
 }

@@ -14,9 +14,15 @@ function App() {
       .then(data => setProducts(data))
   }, [])
 
-  const addNewProduct = (newProduct) => {
-    setProducts([...products, newProduct]);
-  };
+  const addProduct = (product) => {
+    fetch(`http://localhost:3000/products`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(product)
+    })
+  }
 
   return (
     <>
@@ -24,7 +30,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home products={products} />} />
           <Route path='/detail/:id' element={<DetailPage products={products} />} />
-          <Route path='/add' element={<AddProduct addProduct={addNewProduct} />} />
+          <Route path='/add' element={<AddProduct addProduct={addProduct} />} />
 
         </Routes>
       </BrowserRouter>
